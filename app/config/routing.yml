@@ -1,11 +1,11 @@
-user:
-    resource: "@UserBundle/Controller/"
-    type:     annotation
-    prefix:   /
 
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
 
 hwi_oauth_redirect:
     resource: "@HWIOAuthBundle/Resources/config/routing/redirect.xml"
