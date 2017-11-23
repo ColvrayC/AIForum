@@ -23,20 +23,29 @@ class User extends BaseUser
      * @var string
      * @ORM\Column(name="firstName", type="string")
      */
-    private $firstName;
+    protected $firstName;
 
     /**
      * @var string
      * @ORM\Column(name="lastName", type="string")
      */
-    private $lastName;
-
-
+    protected $lastName;
 
     /**
-     * @var array
+     * @var string
+     * @ORM\Column(name="facebook_id", type="string", nullable=true)
      */
-    protected $roles;
+    protected $facebook_id;
+
+    /**
+     * @var string
+     * @ORM\Column(name="google_id", type="string", nullable=true)
+     */
+    protected $google_id;
+
+
+
+
 
     public function __construct()
     {
@@ -90,5 +99,53 @@ class User extends BaseUser
     public function getLastName()
     {
         return $this->lastName;
+    }
+
+    /**
+     * Set facebookId
+     *
+     * @param string $facebookId
+     *
+     * @return User
+     */
+    public function setFacebookId($facebookId)
+    {
+        $this->facebook_id = $facebookId;
+
+        return $this;
+    }
+
+    /**
+     * Get facebookId
+     *
+     * @return string
+     */
+    public function getFacebookId()
+    {
+        return $this->facebook_id;
+    }
+
+    /**
+     * Set googleId
+     *
+     * @param string $googleId
+     *
+     * @return User
+     */
+    public function setGoogleId($googleId)
+    {
+        $this->google_id = $googleId;
+
+        return $this;
+    }
+
+    /**
+     * Get googleId
+     *
+     * @return string
+     */
+    public function getGoogleId()
+    {
+        return $this->google_id;
     }
 }
