@@ -10,34 +10,34 @@ parameters:
     locale: en
 
 framework:
-    #esi: ~
-    #translator: { fallbacks: ['%locale%'] }
-    secret: '%secret%'
+    #esi:             ~
+    #translator:      { fallbacks: ["%locale%"] }
+    secret:          "%secret%"
     router:
-        resource: '%kernel.project_dir%/app/config/routing.yml'
+        resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
-    form: ~
+    form:            ~
     csrf_protection: ~
-    validation: { enable_annotations: true }
-    #serializer: { enable_annotations: true }
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
     templating:
         engines: ['twig']
-    default_locale: '%locale%'
-    trusted_hosts: ~
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
     session:
-        # https://symfony.com/doc/current/reference/configuration/framework.html#handler-id
-        handler_id: session.handler.native_file
-        save_path: '%kernel.project_dir%/var/sessions/%kernel.environment%'
-    fragments: ~
+        # handler_id set to null will use default session handler from php.ini
+        handler_id:  ~
+        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+    fragments:       ~
     http_method_override: true
     assets: ~
-    php_errors:
-        log: true
 
 # Twig Configuration
 twig:
-    debug: '%kernel.debug%'
-    strict_variables: '%kernel.debug%'
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
 
 # Doctrine Configuration
 doctrine:
@@ -68,6 +68,13 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+# app/config/config.yml
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: '%kernel.debug%'
+    filters:
+        cssrewrite: ~
 # app/config/config.yml
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
@@ -95,12 +102,12 @@ hwi_oauth:
     resource_owners:
         facebook:
             type:                facebook
-            client_id:           "%facebook_client_id%"
-            client_secret:       "%facebook_client_secret%"
+            client_id:           492624954440438
+            client_secret:       986a9cb7b4b302867f235bc788f159e0
             scope:               ""
         google:
             type:                google
-            client_id:           "%google_client_id%"
-            client_secret:       "%google_client_secret%"
+            client_id:           912595339221-unlrcmflvpcms43a7i3u4gf1jaa26ujg.apps.googleusercontent.com
+            client_secret:       pIqiZ5S4Jm4DPjBt8bdlK1Vi
             scope:               "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
 # here you will add one (or more) configurations for resource owners

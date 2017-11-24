@@ -10,18 +10,20 @@
         {% block stylesheets %}
             <!-- ================== BEGIN BASE CSS STYLE ================== -->
             <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-            <link href="default/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-            <link href="default/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-            <link href="default/assets/css/animate.min.css" rel="stylesheet" />
-            <link href="default/assets/css/style.min.css" rel="stylesheet" />
-            <link href="default/assets/css/style-responsive.min.css" rel="stylesheet" />
-            <link href="default/assets/css/theme/default.css" id="theme" rel="stylesheet" />
+            <link href="{{ asset('user/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/animate.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/style.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/style-responsive.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/theme/default.css') }}" id="theme" rel="stylesheet" />
+
             <!-- BLUE -->
-            <link href="default/assets/css/theme/blue.css" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/theme/blue.css') }}" rel="stylesheet" />
             <!-- ================== END BASE CSS STYLE ================== -->
 
             <!-- ================== BEGIN BASE JS ================== -->
-            <script src="default/assets/plugins/pace/pace.min.js"></script>
+            <script src="{{ asset('default/assets/plugins/pace/pace.min.js') }}"></script>
             <!-- ================== END BASE JS ================== -->
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -85,17 +87,17 @@
 
         {% block javascripts %}
             <!-- ================== BEGIN BASE JS ================== -->
-            <script src="default/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
-            <script src="default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
-            <script src="default/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <script src="{{ asset('default/assets/plugins/jquery/jquery-1.9.1.min.js') }}"></script>
+            <script src="{{ asset('default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js') }}"></script>
+            <script src="{{ asset('default/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
             <!--[if lt IE 9]>
-            <script src="default/assets/crossbrowserjs/html5shiv.js"></script>
-            <script src="default/assets/crossbrowserjs/respond.min.js"></script>
-            <script src="default/assets/crossbrowserjs/excanvas.min.js"></script>
+            <script src="{{ asset('default/assets/crossbrowserjs/html5shiv.js') }}"></script>
+            <script src="{{ asset('default/assets/crossbrowserjs/respond.min.js') }}"></script>
+            <script src="{{ asset('default/assets/crossbrowserjs/excanvas.min.js') }}"></script>
             <![endif]-->
-            <script src="default/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
-            <script src="default/assets/plugins/scrollMonitor/scrollMonitor.js"></script>
-            <script src="default/assets/js/apps.min.js"></script>
+            <script src="{{ asset('default/assets/plugins/jquery-cookie/jquery.cookie.js') }}"></script>
+            <script src="{{ asset('default/assets/plugins/scrollMonitor/scrollMonitor.js') }}"></script>
+            <script src="{{ asset('default/assets/js/apps.min.js') }}"></script>
             <!-- ================== END BASE JS ================== -->
 
 
