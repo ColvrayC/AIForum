@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new HWI\Bundle\OAuthBundle\HWIOAuthBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new UserBundle\UserBundle(),
+            new BackBundle\BackBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,4 +1,4 @@
-
+{% trans_default_domain 'FOSUserBundle' %}
 
 <!-- begin #page-loader -->
 <div id="page-loader" class="fade in"><span class="spinner"></span></div>
@@ -36,20 +36,23 @@
             <!-- end login-header -->
             <!-- begin login-content -->
             <div class="login-content">
-                <form action="index.html" method="POST" class="margin-bottom-0">
+                <form action="{{ path("fos_user_security_check") }}" method="POST" class="margin-bottom-0">
+                    {% if csrf_token %}
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                    {% endif %}
                     <div class="form-group m-b-15">
-                        <input type="text" class="form-control input-lg" placeholder="Email Address" required />
+                        <input value="{{ last_username }}"  id="username" name="_username" for="username" type="text" class="form-control input-lg" placeholder="Adresse email" required />
                     </div>
                     <div class="form-group m-b-15">
-                        <input type="password" class="form-control input-lg" placeholder="Password" required />
+                        <input  type="password" id="password" name="_password" class="form-control input-lg" placeholder="Mot de passe" required />
                     </div>
                     <div class="checkbox m-b-30">
                         <label>
-                            <input type="checkbox" /> Remember Me
+                            <input  type="checkbox" id="remember_me" name="_remember_me" value="on"/> Remember Me
                         </label>
                     </div>
                     <div class="login-buttons">
-                        <button type="submit" class="btn btn-success btn-block btn-lg">Sign me in</button>
+                        <button type="submit"  vid="_submit" name="_submit" class="btn btn-success btn-block btn-lg">Sign me in</button>
                     </div>
                     <div class="m-t-20 m-b-40 p-b-40 text-inverse">
                         Not a member yet? Click <a href="register_v3.html" class="text-success">here</a> to register.
@@ -59,6 +62,8 @@
                         &copy; Color Admin All Right Reserved 2015
                     </p>
                 </form>
+
+
             </div>
             <!-- end login-content -->
         </div>

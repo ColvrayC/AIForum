@@ -148,4 +148,9 @@ class User extends BaseUser
     {
         return $this->google_id;
     }
+
+    public function setEmail($email){
+        parent::setEmail($email);
+        $this->setUsername($email);
+    }
 }

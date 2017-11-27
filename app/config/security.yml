@@ -9,7 +9,7 @@ security:
 
     providers:
         fos_userbundle:
-            id: fos_user.user_provider.username
+            id: fos_user.user_provider.username_email
 
     firewalls:
         main:
@@ -22,8 +22,8 @@ security:
                 resource_owners:
                     facebook:       "/connect/check-facebook"
                     google:         "/connect/check-google"
-                login_path:       /connect
-                failure_path:     /connect
+                login_path:       /login # /connect quand intégration de HWIOauth
+                failure_path:     /login # /connect quand intégration de HWIOauth
 
                 oauth_user_provider:
                     service: hwi_oauth.user.provider.fosub_bridge
