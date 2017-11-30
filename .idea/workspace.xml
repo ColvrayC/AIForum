@@ -2,25 +2,433 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c9528e0-b401-4950-912a-6b5101d02a2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/back/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/forum/category.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/forum/details.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/forum/forum.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackFrontBundle/BackFrontBundle.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/BackBundle/BackBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/crossbrowserjs/excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/crossbrowserjs/html5shiv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/crossbrowserjs/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/style-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/style-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/style.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/theme/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/theme/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/theme/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/theme/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/css/theme/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/action-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/carousel-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/carousel-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/carousel-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/client-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/content-bg-cover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/content-bg-cover2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/home-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/milestone-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/quote-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/quote.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/user-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/user-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/user-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/img/work-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/js/apps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/js/apps.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_component_list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_content.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_footer.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_header.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_helper.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_pace_loader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_page_section_list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_page_setting.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/_variable.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/glyphicons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/input-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/background-variant.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/border-radius.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/center-block.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/clearfix.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/gradients.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/grid-framework.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/hide-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/image.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/labels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/list-group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/nav-divider.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/nav-vertical-align.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/opacity.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/progress-bar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/reset-filter.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/reset-text.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/resize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/responsive-visibility.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/size.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/tab-focus.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/table-row.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/text-emphasis.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/text-overflow.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/mixins/vendor-prefixes.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/panels.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/print.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/responsive-embed.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/theme.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/bootstrap/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_alert_note.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_badge_label.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_button.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_dropdown_menu.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_form_elements.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_jumbotron.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_list_group.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_list_group_item.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_media_object.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_modal.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_nav_tab.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_panel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_progress_bar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_table.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_theme_panel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/components/_well.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_about_us.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_action_box.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_home.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_pricing.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_quote.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_service.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_team.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_testimonial.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/page-section/_work.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/style.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/theme/_blue.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/theme/_default.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/theme/_orange.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/theme/_purple.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/less/theme/_red.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/bootstrap/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/screen-reader.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery-cookie/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery/jquery-1.8.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery/jquery-1.9.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery/jquery-migrate-1.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/less/less.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/.hsdoc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/Gruntfile.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/intro.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/lib/color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/lib/themes.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/lib/themes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/resources/barber-pole-orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/resources/flash-white.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/resources/templates/index.jade" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/resources/templates/page.jade" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/docs/welcome/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/install.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/pace.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/pace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/pace.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-barber-shop.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-big-counter.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-bounce.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-center-atom.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-center-circle.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-center-radar.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-center-simple.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-corner-indicator.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-fill-left.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-flash.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-flat-top.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-loading-bar.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-mac-osx.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/templates/pace-theme-minimal.tmpl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/tests/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/black/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/blue/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/green/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/orange/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/pink/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/purple/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/red/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/silver/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/white/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-barber-shop.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-big-counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-bounce.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-center-atom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-center-circle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-center-radar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-center-simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-corner-indicator.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-fill-left.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-flash.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-flat-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-loading-bar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-mac-osx.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/pace/themes/yellow/pace-theme-minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/demos/fixed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/demos/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/demos/listdata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/demos/scoreboard.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/demos/stress.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/default/assets/plugins/scrollMonitor/scrollMonitor.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/forum/forum.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/forum/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/forum/category.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/forum/category.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/forum/details.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/forum/details.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,76 +439,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config_test.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BackBundle/BackBundle/Controller/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/back/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="32" />
+            <state relative-caret-position="630">
+              <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
               <folding>
-                <element signature="e#2531#5278#0#Twig" expanded="false" />
+                <element signature="e#3976#5136#0#Twig" expanded="false" />
+                <element signature="e#5146#9310#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="48" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-              <folding>
-                <element signature="e#2531#5278#0#Twig" expanded="false" />
-              </folding>
+            <state relative-caret-position="-661">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,33 +475,9 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1511801353930" expanded="true" signature="0:152" ph="app: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="107:131" ph="@AppBundl…ontroller/" />
-                <marker date="1511801353930" expanded="true" signature="142:152" ph="annotation" />
-                <marker date="1511801353930" expanded="true" signature="153:239" ph="user: &lt;3 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="173:198" ph="@UserBund…ontroller/" />
-                <marker date="1511801353930" expanded="true" signature="213:223" ph="annotation" />
-                <marker date="1511801353930" expanded="true" signature="265:352" ph="fos_user_security: &lt;1 key&gt;" />
-                <marker date="1511801353930" expanded="true" signature="298:352" ph="@FOSUserB…curity.xml" />
-                <marker date="1511801353930" expanded="true" signature="354:460" ph="fos_user_profile: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="386:439" ph="@FOSUserB…rofile.xml" />
-                <marker date="1511801353930" expanded="true" signature="452:460" ph="/profile" />
-                <marker date="1511801353930" expanded="true" signature="462:575" ph="fos_user_register: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="495:553" ph="@FOSUserB…ration.xml" />
-                <marker date="1511801353930" expanded="true" signature="566:575" ph="/register" />
-                <marker date="1511801353930" expanded="true" signature="577:689" ph="fos_user_resetting: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="611:666" ph="@FOSUserB…etting.xml" />
-                <marker date="1511801353930" expanded="true" signature="679:689" ph="/resetting" />
-                <marker date="1511801353930" expanded="true" signature="691:813" ph="fos_user_…e_password: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="731:792" ph="@FOSUserB…ssword.xml" />
-                <marker date="1511801353930" expanded="true" signature="805:813" ph="/profile" />
-                <marker date="1511801353930" expanded="true" signature="814:926" ph="hwi_oauth_redirect: &lt;2 keys&gt;" />
-                <marker date="1511801353930" expanded="true" signature="848:903" ph="@HWIOAuth…direct.xml" />
-                <marker date="1511801353930" expanded="true" signature="918:926" ph="/connect" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,11 +485,61 @@
       <file leaf-file-name="ForumController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="11" />
+              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/details.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/category.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/back/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
-                <element signature="e#40#99#0#PHP" expanded="true" />
+                <element signature="e#2531#5278#0#Twig" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,6 +567,7 @@
       <find>&quot;assets/</find>
       <find>assetsimg</find>
       <find>back</find>
+      <find>UserBundle</find>
     </findStrings>
     <replaceStrings>
       <replace>=&quot;http://localhost/AIforum/web/user/assets/</replace>
@@ -214,8 +598,6 @@
         <option value="$PROJECT_DIR$/app/Resources/HWIOAuthBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/HWIOAuthBundle/views/Connect/registration.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
@@ -231,14 +613,19 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/forum/forum.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/forum/category.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/forum/details.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/BackBundle/BackBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/back/layout.html.twig" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/BackFrontBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/BackFrontBundle/BackFrontBundle.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/forum/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/forum/details.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/forum/category.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -249,11 +636,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1290" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -310,22 +696,6 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="back" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="forum" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -349,27 +719,6 @@
             <path>
               <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
               <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -378,17 +727,12 @@
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="cache" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="AIForum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AIForum" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,14 +741,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\AIForum\src\BackBundle" />
       <recent name="C:\wamp64\www\AIForum\app\Resources\HWIOAuthBundle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\AIForum\src\BackFrontBundle" />
       <recent name="C:\wamp64\www\AIForum\web\default" />
       <recent name="C:\wamp64\www\AIForum\web\assets\css" />
       <recent name="C:\wamp64\www\AIForum\app\Resources\views\default" />
       <recent name="C:\wamp64\www\AIForum\web" />
-      <recent name="C:\wamp64\www\AIForum\app\Resources\HWIOAuthBundle" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,21 +783,23 @@
       <workItem from="1511518239607" duration="5643000" />
       <workItem from="1511531759111" duration="8977000" />
       <workItem from="1511783919653" duration="4692000" />
-      <workItem from="1511797899816" duration="3593000" />
+      <workItem from="1511797899816" duration="6462000" />
+      <workItem from="1512028995340" duration="1997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45311000" />
+    <option name="totallyTimeSpent" value="50177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1290" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22527473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -464,7 +811,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -481,92 +827,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/assets/css/animate.css" />
-    <entry file="file://$PROJECT_DIR$/web/default/assets/js/apps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511429460871" expanded="true" signature="0:62" ph="&lt;IfModule mod_authz_core.c&gt;" />
-            <marker date="1511429460871" expanded="true" signature="63:142" ph="&lt;IfModule !mod_authz_core.c&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/HWIOAuthBundle/translations/HWIOAuthBundle.fr.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/assets/img/login-bg/bg-7.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="850" column="27" lean-forward="false" selection-start-line="850" selection-start-column="27" selection-end-line="850" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="808" column="22" lean-forward="false" selection-start-line="808" selection-start-column="22" selection-end-line="808" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/HWIOAuthBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2295">
           <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -692,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="40" lean-forward="false" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,35 +958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="50" column="79" lean-forward="false" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#99#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="e#2053#4976#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,113 +983,147 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/category.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="393" column="0" lean-forward="false" selection-start-line="393" selection-start-column="0" selection-end-line="393" selection-end-column="22" />
-          <folding>
-            <element signature="e#628#634#1#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/forum.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="253" selection-end-column="22" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/details.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Controller/DefaultController.php" />
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Tests/Functional/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="6" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Tests/Functional/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="290" column="20" lean-forward="false" selection-start-line="290" selection-start-column="20" selection-end-line="290" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/KernelInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-870">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackFrontBundle/Resources/views/Default/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackFrontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
           <folding>
-            <element signature="e#670#676#1#HTML" expanded="true" />
+            <element signature="e#46#105#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#7#47#0#PHP" expanded="false" />
+            <element signature="n#getCacheDir#0;n#AppKernel#0;n#!!top" expanded="false" />
+            <element signature="n#getLogDir#0;n#AppKernel#0;n#!!top" expanded="false" />
+            <element signature="n#registerContainerConfiguration#0;n#AppKernel#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserBundle/UserBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackFrontBundle/BackFrontBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding>
-            <marker date="1511801353942" expanded="true" signature="0:109" ph="imports: &lt;3 items&gt;" />
-            <marker date="1511801353942" expanded="true" signature="368:394" ph="parameters: &lt;1 key&gt;" />
-            <marker date="1511801353942" expanded="true" signature="392:394" ph="en" />
-            <marker date="1511801353942" expanded="true" signature="396:1183" ph="framework: &lt;13 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="502:512" ph="%secret%" />
-            <marker date="1511801353942" expanded="true" signature="517:612" ph="router: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="543:581" ph="%kernel.r…outing.yml" />
-            <marker date="1511801353942" expanded="true" signature="663:708" ph="validation: {1 key}" />
-            <marker date="1511801353942" expanded="true" signature="702:706" ph="true" />
-            <marker date="1511801353942" expanded="true" signature="764:801" ph="templating: &lt;1 key&gt;" />
-            <marker date="1511801353942" expanded="true" signature="784:801" ph="engines: [1 item]" />
-            <marker date="1511801353942" expanded="true" signature="794:800" ph="twig" />
-            <marker date="1511801353942" expanded="true" signature="866:876" ph="%locale%" />
-            <marker date="1511801353942" expanded="true" signature="927:1115" ph="session: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="1059:1115" ph="%kernel.r…vironment%" />
-            <marker date="1511801353942" expanded="true" signature="1165:1169" ph="true" />
-            <marker date="1511801353942" expanded="true" signature="1206:1289" ph="twig: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="1234:1250" ph="%kernel.debug%" />
-            <marker date="1511801353942" expanded="true" signature="1273:1289" ph="%kernel.debug%" />
-            <marker date="1511801353942" expanded="true" signature="1316:2019" ph="doctrine: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="1330:1553" ph="dbal: &lt;7 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="1352:1361" ph="pdo_mysql" />
-            <marker date="1511801353942" expanded="true" signature="1376:1393" ph="%database_host%" />
-            <marker date="1511801353942" expanded="true" signature="1442:1459" ph="%database_name%" />
-            <marker date="1511801353942" expanded="true" signature="1510:1531" ph="%database_password%" />
-            <marker date="1511801353942" expanded="true" signature="1549:1553" ph="UTF8" />
-            <marker date="1511801353942" expanded="true" signature="1869:2019" ph="orm: &lt;3 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="1911:1927" ph="%kernel.debug%" />
-            <marker date="1511801353942" expanded="true" signature="1953:1992" ph="doctrine.…underscore" />
-            <marker date="1511801353942" expanded="true" signature="2015:2019" ph="true" />
-            <marker date="1511801353942" expanded="true" signature="2049:2215" ph="swiftmailer: &lt;5 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2077:2097" ph="%mailer_transport%" />
-            <marker date="1511801353942" expanded="true" signature="2108:2123" ph="%mailer_host%" />
-            <marker date="1511801353942" expanded="true" signature="2138:2153" ph="%mailer_user%" />
-            <marker date="1511801353942" expanded="true" signature="2168:2187" ph="%mailer_password%" />
-            <marker date="1511801353942" expanded="true" signature="2192:2215" ph="spool: {1 key}" />
-            <marker date="1511801353942" expanded="true" signature="2207:2213" ph="memory" />
-            <marker date="1511801353942" expanded="true" signature="2241:2358" ph="assetic: &lt;3 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2270:2286" ph="%kernel.debug%" />
-            <marker date="1511801353942" expanded="true" signature="2307:2323" ph="%kernel.debug%" />
-            <marker date="1511801353942" expanded="true" signature="2328:2358" ph="filters: &lt;1 key&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2383:2653" ph="fos_user: &lt;4 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2408:2411" ph="orm" />
-            <marker date="1511801353942" expanded="true" signature="2490:2494" ph="main" />
-            <marker date="1511801353942" expanded="true" signature="2511:2533" ph="UserBundl…ntity\User" />
-            <marker date="1511801353942" expanded="true" signature="2538:2653" ph="from_email: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2571:2596" ph="camille.c…@gmail.com" />
-            <marker date="1511801353942" expanded="true" signature="2622:2653" ph="Forum Int…tificielle" />
-            <marker date="1511801353942" expanded="true" signature="2924:3021" ph="connect: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="2955:2959" ph="true" />
-            <marker date="1511801353942" expanded="true" signature="2987:3021" ph="fos_user.…rm.factory" />
-            <marker date="1511801353942" expanded="true" signature="3110:3132" ph="firewall_names: [1 item]" />
-            <marker date="1511801353942" expanded="true" signature="3127:3131" ph="main" />
-            <marker date="1511801353942" expanded="true" signature="3137:3360" ph="fosub: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="3173:3175" ph="30" />
-            <marker date="1511801353942" expanded="true" signature="3184:3360" ph="properties: &lt;2 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="3319:3330" ph="facebook_id" />
-            <marker date="1511801353942" expanded="true" signature="3351:3360" ph="google_id" />
-            <marker date="1511801353942" expanded="true" signature="3390:3592" ph="facebook: &lt;4 keys&gt;" />
-            <marker date="1511801353942" expanded="true" signature="3433:3441" ph="facebook" />
-            <marker date="1511801353942" expanded="true" signature="3475:3490" ph="492624954440438" />
-            <marker date="1511801353942" expanded="true" signature="3524:3556" ph="986a9cb7b…c788f159e0" />
-            <marker date="1511801353942" expanded="true" signature="3590:3592" ph="" />
-            <marker date="1511801353942" expanded="true" signature="3642:3648" ph="google" />
-            <marker date="1511801353942" expanded="true" signature="3682:3754" ph="912595339…ontent.com" />
-            <marker date="1511801353942" expanded="true" signature="3788:3812" ph="pIqiZ5S4J…Bt8bdlK1Vi" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-661">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -876,94 +1138,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511801353930" expanded="true" signature="0:152" ph="app: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="107:131" ph="@AppBundl…ontroller/" />
-            <marker date="1511801353930" expanded="true" signature="142:152" ph="annotation" />
-            <marker date="1511801353930" expanded="true" signature="153:239" ph="user: &lt;3 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="173:198" ph="@UserBund…ontroller/" />
-            <marker date="1511801353930" expanded="true" signature="213:223" ph="annotation" />
-            <marker date="1511801353930" expanded="true" signature="265:352" ph="fos_user_security: &lt;1 key&gt;" />
-            <marker date="1511801353930" expanded="true" signature="298:352" ph="@FOSUserB…curity.xml" />
-            <marker date="1511801353930" expanded="true" signature="354:460" ph="fos_user_profile: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="386:439" ph="@FOSUserB…rofile.xml" />
-            <marker date="1511801353930" expanded="true" signature="452:460" ph="/profile" />
-            <marker date="1511801353930" expanded="true" signature="462:575" ph="fos_user_register: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="495:553" ph="@FOSUserB…ration.xml" />
-            <marker date="1511801353930" expanded="true" signature="566:575" ph="/register" />
-            <marker date="1511801353930" expanded="true" signature="577:689" ph="fos_user_resetting: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="611:666" ph="@FOSUserB…etting.xml" />
-            <marker date="1511801353930" expanded="true" signature="679:689" ph="/resetting" />
-            <marker date="1511801353930" expanded="true" signature="691:813" ph="fos_user_…e_password: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="731:792" ph="@FOSUserB…ssword.xml" />
-            <marker date="1511801353930" expanded="true" signature="805:813" ph="/profile" />
-            <marker date="1511801353930" expanded="true" signature="814:926" ph="hwi_oauth_redirect: &lt;2 keys&gt;" />
-            <marker date="1511801353930" expanded="true" signature="848:903" ph="@HWIOAuth…direct.xml" />
-            <marker date="1511801353930" expanded="true" signature="918:926" ph="/connect" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ForumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="e#40#99#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BackBundle/BackBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        <state relative-caret-position="756">
+          <caret line="130" column="7" lean-forward="true" selection-start-line="130" selection-start-column="7" selection-end-line="132" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/back/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="e#2531#5278#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/back/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/details.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="110" column="32" lean-forward="false" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/category.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/forum/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="63" column="54" lean-forward="false" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
           <folding>
-            <element signature="e#2531#5278#0#Twig" expanded="false" />
+            <element signature="e#3976#5136#0#Twig" expanded="false" />
+            <element signature="e#5146#9310#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>

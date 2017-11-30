@@ -9,12 +9,12 @@ use Symfony\Component\HttpFoundation\Request;
 class ForumController extends Controller
 {
     /**
-     * @Route("/forum", name="forum")
+     * @Route("/", name="homepage")
      */
-    public function forumAction(Request $request)
+    public function indexAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('forum/forum.html.twig', [
+        return $this->render('forum/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }

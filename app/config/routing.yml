@@ -1,13 +1,13 @@
-back:
-    resource: "@BackBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
 user:
     resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+back_front:
+    resource: "@BackFrontBundle/Controller/"
     type:     annotation
     prefix:   /
 # app/config/routing.yml
