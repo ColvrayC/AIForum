@@ -19,7 +19,7 @@
         <link href="{{ asset('user/assets/css/theme/default.css') }}" id="theme" rel="stylesheet" />
 
         <!-- BLUE -->
-        <link href="{{ asset('default/assets/css/theme/blue.css') }}" rel="stylesheet" />
+        <link href="{{ asset('user/assets/css/theme/blue.css') }}" rel="stylesheet" />
         <!-- ================== END BASE CSS STYLE ================== -->
 
         <!-- ================== BEGIN BASE JS ================== -->
@@ -65,36 +65,30 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand">
-                        <span class="brand-logo"></span>
+                    <a href="{{ url('homepage') }}" class="navbar-brand">
+                        <span class="navbar-logo"></span>
                         <span class="brand-text">
-                            <span class="text-theme">Color</span> Admin
-                        </span>
+                        Support Forum
+                    </span>
                     </a>
                 </div>
                 <!-- end navbar-header -->
-                <!-- begin navbar-collapse -->
+                <!-- begin #header-navbar -->
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active dropdown">
-                            <a href="#home" data-click="scroll-to-target" data-target="#" data-toggle="dropdown">HOME <b class="caret"></b></a>
-                            <ul class="dropdown-menu dropdown-menu-left animated fadeInDown">
-                                <li><a href="index.html">Page with Transparent Header</a></li>
-                                <li><a href="index_inverse_header.html">Page with Inverse Header</a></li>
-                                <li><a href="index.html.twig">Page with White Header</a></li>
-                                <li><a href="extra_element.html">Extra Element</a></li>
-                            </ul>
+                        <li>
+                            <form class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Keywords..." />
+                                    <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
                         </li>
-                        <li><a href="#about" data-click="scroll-to-target">ABOUT</a></li>
-                        <li><a href="#team" data-click="scroll-to-target">TEAM</a></li>
-                        <li><a href="#service" data-click="scroll-to-target">SERVICES</a></li>
-                        <li><a href="#work" data-click="scroll-to-target">WORK</a></li>
-                        <li><a href="#client" data-click="scroll-to-target">CLIENT</a></li>
-                        <li><a href="#pricing" data-click="scroll-to-target">PRICING</a></li>
-                        <li><a href="#contact" data-click="scroll-to-target">CONTACT</a></li>
+                        <li><a href="{{ url('fos_user_registration_register') }}">Créer un compte</a></li>
+                        <li><a href="{{ url('fos_user_security_login') }}">Connexion</a></li>
                     </ul>
                 </div>
-                <!-- end navbar-collapse -->
+                <!-- end #header-navbar -->
             </div>
             <!-- end container -->
         </div>

@@ -8,29 +8,145 @@
         <meta content="" name="author" />
 
         {% block stylesheets %}
+
+
+
             <!-- ================== BEGIN BASE CSS STYLE ================== -->
             <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-            <link href="{{ asset('forum/assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
-            <link href="{{ asset('forum/assets/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
-            <link href="{{ asset('forum/assets/css/animate.min.css') }}" rel="stylesheet" />
-            <link href="{{ asset('forum/assets/css/style.min.css') }}" rel="stylesheet" />
-            <link href="{{ asset('forum/assets/css/style-responsive.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/animate.min.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/style.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/style-responsive.min.css') }}" rel="stylesheet" />
 
             <!-- BLUE -->
-            <link href="{{ asset('forum/assets/css/theme/blue.css') }}" rel="stylesheet" />
+            <link href="{{ asset('default/assets/css/theme/blue.css') }}" rel="stylesheet" />
             <!-- ================== END BASE CSS STYLE ================== -->
 
             <!-- ================== BEGIN BASE JS ================== -->
-            <script src="{{ asset('forum/assets/plugins/pace/pace.min.js') }}"></script>
+            <script src="{{ asset('default/assets/plugins/pace/pace.min.js') }}"></script>
             <!-- ================== END BASE JS ==================  -->
+
         {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
     </head>
     <body>
 
-        {% block nav %}
-
+        {% if app.user %}
+            {% block navConnected %}
+                <!-- begin #header -->
+                <div id="header" class="header navbar navbar-default navbar-fixed-top">
+                    <!-- begin container-fluid -->
+                    <div class="container">
+                        <!-- begin navbar-header -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="{{ url('homepage') }}" class="navbar-brand">
+                                <span class="navbar-logo"></span>
+                                <span class="brand-text">
+                                Support Forum
+                            </span>
+                            </a>
+                        </div>
+                        <!-- begin header navigation right -->
+                        <div class="collapse navbar-collapse" id="header-navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <form class="navbar-form full-width">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter keyword" />
+                                            <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-14">
+                                        <i class="fa fa-bell-o"></i>
+                                        <span class="label">5</span>
+                                    </a>
+                                    <ul class="dropdown-menu media-list pull-right animated fadeInDown">
+                                        <li class="dropdown-header">Notifications (5)</li>
+                                        <li class="media">
+                                            <a href="javascript:;">
+                                                <div class="media-left"><i class="fa fa-bug media-object bg-red"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Server Error Reports</h6>
+                                                    <div class="text-muted f-s-11">3 minutes ago</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="media">
+                                            <a href="javascript:;">
+                                                <div class="media-left"><img src="{{ asset('default/assets/img/user-1.jpg') }}" class="media-object" alt="" /></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">John Smith</h6>
+                                                    <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                                                    <div class="text-muted f-s-11">25 minutes ago</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="media">
+                                            <a href="javascript:;">
+                                                <div class="media-left"><img src="{{ asset('default/assets/img/user-2.jpg') }}" class="media-object" alt="" /></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading">Olivia</h6>
+                                                    <p>Quisque pulvinar tellus sit amet sem scelerisque tincidunt.</p>
+                                                    <div class="text-muted f-s-11">35 minutes ago</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="media">
+                                            <a href="javascript:;">
+                                                <div class="media-left"><i class="fa fa-plus media-object bg-green"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading"> New User Registered</h6>
+                                                    <div class="text-muted f-s-11">1 hour ago</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="media">
+                                            <a href="javascript:;">
+                                                <div class="media-left"><i class="fa fa-envelope media-object bg-blue"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading"> New Email From John</h6>
+                                                    <div class="text-muted f-s-11">2 hour ago</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="dropdown-footer text-center">
+                                            <a href="javascript:;">View more</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown navbar-user">
+                                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="{{ asset('default/assets/img/user-13.jpg') }}" style="width: 30px;height: 30px;" alt="" /> <!-- style="width: 30px;height: 30px;"  -->
+                                        <span class="hidden-xs">Adam Schwartz</span> <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeInLeft">
+                                        <li class="arrow"></li>
+                                        <li><a href="{{ url('fos_user_profile_show') }}">Profile</a></li>
+                                        <li><a href="javascript:;"><span class="badge badge-danger pull-right">2</span> Inbox</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="{{ url('fos_user_security_logout') }}">Log Out</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- end header navigation right -->
+                        </div>
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end #header -->
+            {% endblock %}
+        {% else %}
+            {% block nav %}
                 <!-- begin #header -->
                 <div id="header" class="header navbar navbar-default navbar-fixed-top">
                     <!-- begin container -->
@@ -42,11 +158,11 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="index.html" class="navbar-brand">
+                            <a href="{{ url('homepage') }}" class="navbar-brand">
                                 <span class="navbar-logo"></span>
                                 <span class="brand-text">
-                        Support Forum
-                    </span>
+                                    Support Forum
+                                </span>
                             </a>
                         </div>
                         <!-- end navbar-header -->
@@ -61,8 +177,8 @@
                                         </div>
                                     </form>
                                 </li>
-                                <li><a href="{{ path('register') }}">Créer un compte</a></li>
-                                <li><a href="{{ path('login') }}">Connexion</a></li>
+                                <li><a href="{{ url('fos_user_registration_register') }}">Créer un compte</a></li>
+                                <li><a href="{{ url('fos_user_security_login') }}">Connexion</a></li>
                             </ul>
                         </div>
                         <!-- end #header-navbar -->
@@ -70,103 +186,120 @@
                     <!-- end container -->
                 </div>
                 <!-- end #header -->
-        {% endblock %}
+            {% endblock %}
+        {% endif %}
+
 
         {% block content %}{% endblock %}
 
 
-        {% block javascripts %}
-            <!-- ================== BEGIN BASE JS ================== -->
-            <script src="{{ asset('forum/assets/plugins/jquery/jquery-1.9.1.min.js') }}"></script>
-            <script src="{{ asset('forum/assets/plugins/jquery/jquery-migrate-1.1.0.min.js') }}"></script>
-            <script src="{{ asset('forum/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-            <!--[if lt IE 9]>
-            <script src="{{ asset('forum/assets/crossbrowserjs/html5shiv.js') }}"></script>
-            <script src="{{ asset('forum/assets/crossbrowserjs/respond.min.js') }}"></script>
-            <script src="{{ asset('forum/assets/crossbrowserjs/excanvas.min.js') }}"></script>
-            <![endif]-->
-            <script src="{{ asset('forum/assets/plugins/jquery-cookie/jquery.cookie.js') }}"></script>
-            <script src="{{ asset('forum/assets/js/apps.min.js') }}"></script>
-            <!-- ================== END BASE JS ================== -->
 
 
-            <script>
-                $(document).ready(function() {
-                    App.init();
-                });
-            </script>
-        {% endblock %}
+            {% block javascripts %}
+                <!-- ================== BEGIN BASE JS ================== -->
+                <script src="{{ asset('default/assets/plugins/jquery/jquery-1.9.1.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/jquery/jquery-migrate-1.1.0.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
+                <!--[if lt IE 9]>
+                <script src="{{ asset('default/assets/crossbrowserjs/html5shiv.js') }}"></script>
+                <script src="{{ asset('default/assets/crossbrowserjs/respond.min.js') }}"></script>
+                <script src="{{ asset('default/assets/crossbrowserjs/excanvas.min.js') }}"></script>
+                <![endif]-->
+                <script src="{{ asset('default/assets/plugins/jquery-cookie/jquery.cookie.js') }}"></script>
+                <script src="{{ asset('default/assets/js/apps.min.js') }}"></script>
+                <!-- ================== END BASE JS ================== -->
+                <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+                <script src="{{ asset('default/assets/plugins/gritter/js/jquery.gritter.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/flot/jquery.flot.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/flot/jquery.flot.time.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/flot/jquery.flot.resize.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/flot/jquery.flot.pie.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/sparkline/jquery.sparkline.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/jquery-jvectormap/jquery-jvectormap.min.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js') }}"></script>
+                <script src="{{ asset('default/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js') }}"></script>
+                <script src="{{ asset('default/assets/js/dashboard.min.js') }}"></script>
+                <script src="{{ asset('default/assets/js/apps.min.js') }}"></script>
+                <!-- ================== END PAGE LEVEL JS ================== -->
 
-        {% block footer %}
-            <!-- begin #footer -->
-            <div id="footer" class="footer">
-                <!-- begin container -->
-                <div class="container">
-                    <!-- begin row -->
-                    <div class="row">
-                        <!-- begin col-4 -->
-                        <div class="col-md-4">
-                            <!-- begin section-container -->
-                            <div class="section-container">
-                                <h4>About Color Admin</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices ipsum in elementum porttitor.
-                                    Cras porttitor fermentum nisl non elementum. Nulla in placerat libero. Nulla pharetra purus eget diam dictum
-                                    ullamcorper nec et eros. Suspendisse consectetur nulla ut volutpat aliquam.
-                                </p>
+                <script>
+                    $(document).ready(function() {
+                        App.init();
+                    });
+                </script>
+            {% endblock %}
+
+            {% block footer %}
+                <!-- begin #footer -->
+                <div id="footer" class="footer">
+                    <!-- begin container -->
+                    <div class="container">
+                        <!-- begin row -->
+                        <div class="row">
+                            <!-- begin col-4 -->
+                            <div class="col-md-4">
+                                <!-- begin section-container -->
+                                <div class="section-container">
+                                    <h4>About Color Admin</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices ipsum in elementum porttitor.
+                                        Cras porttitor fermentum nisl non elementum. Nulla in placerat libero. Nulla pharetra purus eget diam dictum
+                                        ullamcorper nec et eros. Suspendisse consectetur nulla ut volutpat aliquam.
+                                    </p>
+                                </div>
+                                <!-- end section-container -->
                             </div>
-                            <!-- end section-container -->
-                        </div>
-                        <!-- end col-4 -->
-                        <!-- begin col-4 -->
-                        <div class="col-md-4">
-                            <!-- begin section-container -->
-                            <div class="section-container">
-                                <h4>Latest Post</h4>
-                                <ul class="latest-post">
-                                    <li>
-                                        <h4 class="title"><a href="#">Consectetur adipiscing elit ultrices</a></h4>
-                                        <p class="time">yesterday 10:42am</p>
-                                    </li>
-                                    <li>
-                                        <h4 class="title"><a href="#">Fusce ultrices ipsum porttitor</a></h4>
-                                        <p class="time">10/04/2015</p>
-                                    </li>
-                                    <li>
-                                        <h4 class="title"><a href="#">Cras porttitor fermentum adipiscing</a></h4>
-                                        <p class="time">02/04/2015</p>
-                                    </li>
-                                </ul>
+                            <!-- end col-4 -->
+                            <!-- begin col-4 -->
+                            <div class="col-md-4">
+                                <!-- begin section-container -->
+                                <div class="section-container">
+                                    <h4>Latest Post</h4>
+                                    <ul class="latest-post">
+                                        <li>
+                                            <h4 class="title"><a href="#">Consectetur adipiscing elit ultrices</a></h4>
+                                            <p class="time">yesterday 10:42am</p>
+                                        </li>
+                                        <li>
+                                            <h4 class="title"><a href="#">Fusce ultrices ipsum porttitor</a></h4>
+                                            <p class="time">10/04/2015</p>
+                                        </li>
+                                        <li>
+                                            <h4 class="title"><a href="#">Cras porttitor fermentum adipiscing</a></h4>
+                                            <p class="time">02/04/2015</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end section-container -->
                             </div>
-                            <!-- end section-container -->
-                        </div>
-                        <!-- end col-4 -->
-                        <!-- begin col-4 -->
-                        <div class="col-md-4">
-                            <!-- begin section-container -->
-                            <div class="section-container">
-                                <h4>New Users</h4>
-                                <ul class="new-user">
-                                    <li><a href="#"><img src="assets/img/user-1.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-2.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-3.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-4.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-5.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-6.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-7.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-8.jpg" alt="" /></a></li>
-                                    <li><a href="#"><img src="assets/img/user-9.jpg" alt="" /></a></li>
-                                </ul>
+                            <!-- end col-4 -->
+                            <!-- begin col-4 -->
+                            <div class="col-md-4">
+                                <!-- begin section-container -->
+                                <div class="section-container">
+                                    <h4>New Users</h4>
+                                    <ul class="new-user">
+                                        <li><a href="#"><img src="assets/img/user-1.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-2.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-3.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-4.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-5.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-6.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-7.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-8.jpg" alt="" /></a></li>
+                                        <li><a href="#"><img src="assets/img/user-9.jpg" alt="" /></a></li>
+                                    </ul>
+                                </div>
+                                <!-- end section-container -->
                             </div>
-                            <!-- end section-container -->
+                            <!-- end col-4 -->
                         </div>
-                        <!-- end col-4 -->
+                        <!-- end row -->
                     </div>
-                    <!-- end row -->
+                    <!-- end container -->
                 </div>
-                <!-- end container -->
-            </div>
-            <!-- end #footer -->
-        {% endblock %}
+                <!-- end #footer -->
+            {% endblock %}
+
     </body>
 </html>

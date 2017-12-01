@@ -25,7 +25,6 @@ framework:
         #assets_version: SomeVersionScheme
     default_locale:  "%locale%"
     trusted_hosts:   ~
-    trusted_proxies: ~
     session:
         # handler_id set to null will use default session handler from php.ini
         handler_id:  ~
@@ -85,8 +84,8 @@ fos_user:
             sender_name: Forum Intelligence Artificielle
 
 hwi_oauth:
-    #this is my custom user provider, created from FOSUBUserProvider - will manage the
-    #automatic user registration on your site, with data from the provider (facebook. google, etc.)
+    #this is my custom default provider, created from FOSUBUserProvider - will manage the
+    #automatic default registration on your site, with data from the provider (facebook. google, etc.)
     #and also, the connecting part (get the token and the user_id)
     connect:
         confirmation: true
