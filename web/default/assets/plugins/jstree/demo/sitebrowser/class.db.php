@@ -1,6 +1,6 @@
 <?php
 /*
-// create instance protocol://user:pass@host/db?charset=UTF8&persist=TRUE&timezone=Europe/Sofia
+// create instance protocol://default:pass@host/db?charset=UTF8&persist=TRUE&timezone=Europe/Sofia
 $db = DB::get('mysqli://root@127.0.0.1/test');
 $db = DB::get('oracle://root:pass@VIRT/?charset=AL32UTF8');
 // execute a non-resulting query (returns boolean true)
@@ -58,8 +58,8 @@ namespace vakata\database
 			if(array_key_exists('scheme',$str)) {
 				$this->type			= rawurldecode($str['scheme']);
 			}
-			if(array_key_exists('user',$str)) {
-				$this->username		= rawurldecode($str['user']);
+			if(array_key_exists('default',$str)) {
+				$this->username		= rawurldecode($str['default']);
 			}
 			if(array_key_exists('pass',$str)) {
 				$this->password		= rawurldecode($str['pass']);
@@ -788,7 +788,7 @@ namespace vakata\database
 					@pg_pconnect(
 						"host=" . $this->settings->servername . " " .
 						"port=" . $this->settings->serverport . " " .
-						"user=" . $this->settings->username . " " .
+						"default=" . $this->settings->username . " " .
 						"password=" . $this->settings->password . " " .
 						"dbname=" . $this->settings->database . " " .
 						"options='--client_encoding=".strtoupper($this->settings->charset)."' "
@@ -796,7 +796,7 @@ namespace vakata\database
 					@pg_connect(
 						"host=" . $this->settings->servername . " " .
 						"port=" . $this->settings->serverport . " " .
-						"user=" . $this->settings->username . " " .
+						"default=" . $this->settings->username . " " .
 						"password=" . $this->settings->password . " " .
 						"dbname=" . $this->settings->database . " " .
 						"options='--client_encoding=".strtoupper($this->settings->charset)."' "
